@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class ArrayListExample {
+
+    public static void main(String[] args) {
+        // Create an ArrayList
+        ArrayList<String> fruits = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        fruits.add("Mango");
+
+        // Display elements using a for loop
+        System.out.println("Fruits in the ArrayList:");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+
+        // Display elements using an iterator (optional)
+        System.out.println("\nFruits using iterator:");
+        java.util.Iterator<String> iterator = fruits.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        // Access elements by index
+        String firstFruit = fruits.get(0); // Access the first element
+        System.out.println("\nFirst Fruit: " + firstFruit);
+
+        // Remove an element by index
+        fruits.remove(2); // Remove the element at index 2 (Orange)
+        System.out.println("\nFruits after removal:");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+}
