@@ -1,0 +1,16 @@
+public class GenericMethodExample {
+
+    public static <T> void printElements(T[] elements) {
+        for (T element : elements) {
+            System.out.println(element);
+        }
+    }
+
+    public static void main(String[] args) {
+        String[] fruits = {"Apple", "Banana", "Orange"};
+        Integer[] numbers = {1, 2, 3, 4};
+
+        printElements(fruits);
+        printElements(numbers);
+    }
+}
