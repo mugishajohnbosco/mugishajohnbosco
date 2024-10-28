@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+        // Create a HashSet to store unique elements
+        HashSet<String> fruits = new HashSet<>();
+
+        // Add elements to the HashSet
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("orange");
+        fruits.add("apple"); // Duplicate element
+
+        // Display the unique elements in the HashSet
+        System.out.println("Fruits: " + fruits);
+
+        // Check if an element exists in the HashSet
+        boolean containsBanana = fruits.contains("banana");
+        System.out.println("Contains banana: " + containsBanana);
+
+        // Remove an element from the HashSet
+        fruits.remove("orange");
+
+        // Display the updated HashSet
+        System.out.println("Updated fruits: " + fruits);
+    }
+}
