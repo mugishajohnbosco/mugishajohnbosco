@@ -1,0 +1,27 @@
+import java.util.HashMap;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        // Create a HashMap to store key-value pairs
+        HashMap<String, Integer> fruitCalories = new HashMap<>();
+
+        // Add key-value pairs to the HashMap
+        fruitCalories.put("apple", 95);
+        fruitCalories.put("banana", 105);
+        fruitCalories.put("orange", 62);
+
+        // Access the value for a given key
+        int caloriesOfApple = fruitCalories.get("apple");
+        System.out.println("Calories of apple: " + caloriesOfApple);
+
+        // Check if a key exists in the HashMap
+        boolean containsBanana = fruitCalories.containsKey("banana");
+        System.out.println("Contains banana: " + containsBanana);
+
+        // Iterate over the key-value pairs
+        for (String fruit : fruitCalories.keySet()) {
+            int calories = fruitCalories.get(fruit);
+            System.out.println(fruit + ": " + calories);
+        }
+    }
+}
