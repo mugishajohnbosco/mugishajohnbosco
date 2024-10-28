@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Create an ArrayList to store elements
+        ArrayList<String> elements = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        elements.add("apple");
+        elements.add("banana");
+        elements.add("orange");
+
+        // Display the elements in the ArrayList
+        System.out.println("Elements: " + elements);
+
+        // Access and display the first element
+        String firstElement = elements.get(0);
+        System.out.println("First element: " + firstElement);
+
+        // Access and display the last element
+        int lastIndex = elements.size() - 1;
+        String lastElement = elements.get(lastIndex);
+        System.out.println("Last element: " + lastElement);
+
+        // Remove an element from the ArrayList
+        elements.remove("banana");
+
+        // Display the updated ArrayList
+        System.out.println("Updated elements: " + elements);
+    }
+}
