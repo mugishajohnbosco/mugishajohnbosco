@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Create an ArrayList to store fruits
+        ArrayList<String> fruits = new ArrayList<>();
+
+        // Add fruits to the ArrayList
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("orange");
+
+        // Print the ArrayList
+        System.out.println("Fruits: " + fruits);
+
+        // Remove the element "banana"
+        fruits.remove("banana");
+
+        // Remove the element at index 1 (which is now "orange")
+        fruits.remove(1);
+
+        // Print the updated ArrayList
+        System.out.println("Updated fruits: " + fruits);
+
+        // Iterate over each element in the ArrayList and print it
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+}
